@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Calculator.css">
+    </head>
+    <body>
+        <main class="card">
+            <h1>Simple Calculator</h1>
+            <div class="field">
+                <label for="num1">First number</label>
+                <input type="number" id="num1" step="any" placeholder="e.g. 12.5">
+            </div>
+            <div class="field">
+                <label for="num2">Second number</label>
+                <input type="number" id="num2" step="any" placeholder="e.g. 4">
+            </div>
+            <div class="field">
+                <label for="result">Result</label>
+                <input type="text" id="result" readonly>
+            </div>
+            <div class="actions">
+                <button type="button" onclick="calculate('add')">+</button>
+                <button type="button" onclick="calculate('sub')">-</button>
+                <button type="button" onclick="calculate('mul')">*</button>
+                <button type="button" onclick="calculate('div')">/</button>
+            </div>
+        </main>
+        <script src="Calculator.js"></script>
+    </body>
+</html>
